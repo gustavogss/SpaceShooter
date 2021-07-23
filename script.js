@@ -9,19 +9,6 @@ const instructionsText = document.querySelector(".game-instructions");
 const startButton = document.querySelector(".start-button");
 let alienInterval;
 
-function flyShip(event) {
-  if (event.key === "ArrowUp") {
-    event.preventDefault();
-    moveUp();
-  } else if (event.key === "ArrowDown") {
-    event.preventDefault();
-    moveDown();
-  } else if (event.key === " ") {
-    event.preventDefault();
-    fireLaser();
-  }
-}
-
 function moveUp() {
   let topPosition = getComputedStyle(yourShip).getPropertyValue("top");
   if (topPosition === "0px") {
@@ -137,17 +124,34 @@ startButton.addEventListener("click", (event) => {
   playGame();
 });
 
+window.addEventListener("keydown", (event) => {
+  if (startButton.style.display !== "none") {
+    if (event.key === "Enter") {
+      playGame();
+    }
+  } else {
+    if (event.key === "ArrowUp") {
+      event.preventDefault();
+      moveUp();
+    } else if (event.key === "ArrowDown") {
+      event.preventDefault();
+      moveDown();
+    } else if (event.key === " ") {
+      event.preventDefault();
+      fireLaser();
+    }
+  }
+});
+
 function playGame() {
   startButton.style.display = "none";
   instructionsText.style.display = "none";
-  window.addEventListener("keydown", flyShip);
   alienInterval = setInterval(() => {
     createAliens();
   }, 2000);
 }
 
 function gameOver() {
-  window.removeEventListener("keydown", flyShip);
   clearInterval(alienInterval);
   let aliens = document.querySelectorAll(".alien");
   aliens.forEach((alien) => alien.remove());

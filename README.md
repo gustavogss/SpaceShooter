@@ -13,5 +13,4 @@ Jogo estilo Space Shooter em que a nave tem que atirar em seus inimigos
 
 ## Deploy 🎮
 
-- Divirta-se:
-https://gustavogss.github.io/spaceshooter/
+- [Clique Aqui](https://gustavogss.github.io/spaceshooter/)

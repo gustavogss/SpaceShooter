@@ -6,6 +6,10 @@ Jogo estilo Space Shooter em que a nave tem que atirar em seus inimigos
 - CSS 
 - JavaScript
 
+## Tarefas pendentes:
+- Adicionar pontuação
+- Adicionar rancking
+
 ##  Como usar 🎮
 
 - [Clique Aqui](https://gustavogss.github.io/spaceshooter/)

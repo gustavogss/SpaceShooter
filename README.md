@@ -10,8 +10,9 @@ Jogo estilo Space Shooter em que a nave tem que atirar em seus inimigos
 - Adicionar pontuação
 - Adicionar rancking
 
-##  Como usar 🎮
+##  Divirta-se 🎮
 
 - [Clique Aqui](https://gustavogss.github.io/spaceshooter/)
 
-<img src="https://github.com/gustavogss/spaceshooter/blob/main/img/space-shotter.png" />
+
+[Gravação de tela de 21-11-2022 01:34:13.webm](https://user-images.githubusercontent.com/20332960/202966604-5f265174-6e23-4f0e-a0d8-792451d57cea.webm)
